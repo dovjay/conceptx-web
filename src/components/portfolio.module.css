@@ -1,0 +1,10 @@
+.portfolio_sm {
+  width: 50vw;
+  height: 45vw;
+}
+
+.portfolio_lg {
+  margin-top: 200px;
+  width: 80vw;
+  height: 40vw;
+}
