@@ -12,7 +12,7 @@ export default function Home() {
         <h1>Big Main Hero Banner</h1>
       </div>
 
-      <WelcomeText />      
+      <WelcomeText />
 
       <div style={{ marginTop: 200 }}>
         <div className="d-flex">
