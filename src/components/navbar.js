@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
+import { Link } from "gatsby"
 import anime from "animejs/lib/anime.es"
 
 export default function Navbar() {
@@ -43,7 +44,9 @@ export default function Navbar() {
       <div className="d-flex px-5">
         <div className="h4">ConceptX</div>
         <div className="ml-auto">
-          View our work, learn about us or reach out.
+          View <Link activeStyle={{ textDecoration: 'none' }} to="/">our work</Link>, 
+          learn <Link activeStyle={{ textDecoration: 'none' }} partiallyActive={true} to="/about">about us</Link> or&nbsp;
+          <Link activeStyle={{ textDecoration: 'none' }} partiallyActive={true} to="/contact">reach out</Link>.
         </div>
       </div>
     </div>

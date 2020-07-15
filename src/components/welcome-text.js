@@ -1,6 +1,8 @@
 import React, { useEffect } from "react"
 import anime from "animejs/lib/anime.es"
 
+import SubHeader from "./sub-header"
+
 export default function WelcomeText() {
   const textVariation = [
     "We build fun experiences using cutting edge technologies.",
@@ -30,20 +32,20 @@ export default function WelcomeText() {
   }, [])
 
   return (
-    <div className="text-center" style={{ marginTop: 200 }}>
-      <h6>HELLO THERE</h6>
+    <div className="text-center" style={{ marginTop: 300 }}>
+      <SubHeader content="HELLO THERE"/>
       <div className="d-flex w-100 justify-content-center align-items-center mt-5">
-        <h1 className="position-absolute w-50">
+        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
           {[...textVariation[0]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-1" key={index}>{letter}</span>
           ))}
         </h1>
-        <h1 className="position-absolute w-50">
+        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
           {[...textVariation[1]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-2" key={index}>{letter}</span>
           ))}
         </h1>
-        <h1 className="position-absolute w-50">
+        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
           {[...textVariation[2]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-3" key={index}>{letter}</span>
           ))}
