@@ -1,11 +1,11 @@
 import React from "react"
 
-export default function Contacts() {
+export default function subFooter(props) {
   return (
     <>
-      <div className="text-center d-flex justify-content-center align-items-center flex-column" style={{ marginTop: 500 }}>
+      <div className="text-center d-flex justify-content-center align-items-center flex-column" style={{ marginTop: 400 }}>
         <h1 style={{ fontSize: '6.5vw' }} className="font-weight-normal w-75">
-          Let's make something great together.
+          { props.contact ? "Get in touch." : "Let's make something great together." }
         </h1>
         <p style={{ fontSize: '1.5em' }} className="mt-3">
           Have a project or want to talk? Say hello to <a href="mailto:radi@conceptx.id">radi@conceptx.id</a>
