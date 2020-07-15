@@ -1,16 +1,16 @@
 import React from "react"
 
 import Navbar from "./navbar"
-import Contact from "./contacts"
+import SubFooter from "./sub-footer"
 import Footer from "./footer"
 
-export default function Layout({ children }) {
+export default function Layout({ contact, children }) {
   return (
     <div>
       <Navbar/>
-      <div style={{ margin: 'auto 6rem' }}>
+      <div style={{ margin: 'auto 6rem', marginTop: 120 }}>
         {children}
-        <Contact/>
+        <SubFooter contact={contact} />
       </div>
       <Footer/>
     </div>

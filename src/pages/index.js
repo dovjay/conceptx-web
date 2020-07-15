@@ -38,7 +38,7 @@ export default function Home() {
 
   return (
     <Layout>
-      <div style={{ marginTop: 120 }}>
+      <div>
         <video autoPlay muted loop style={{ width: "100%" }}>
           <source src={mainVideo} type="video/mp4" />
         </video>
