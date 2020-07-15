@@ -10,9 +10,9 @@
 }
 
 .portfolio_img img {
-  transition: transform 2.5s !important;
+  transition: transform 2.5s ease-out !important;
 }
 
 .portfolio_img:hover img {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
