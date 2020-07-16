@@ -1,0 +1,60 @@
+.main_header {
+ font-size: 8vw;
+ line-height: 1.1;
+ letter-spacing: 7;
+ margin-top: 50px; 
+ text-align: center;
+ width: 75%;
+}
+
+.what_we_do_desc {
+  width: 55vw;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flow_desc_container {
+  width: 50%;
+}
+
+.flow_img_container {
+  height: 47vw
+}
+
+.flow_img {
+  height: 100%;
+  width: 82%;
+}
+
+.flow_direction {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 480px) {
+  .main_header {
+    margin-top: 150px;
+    font-size: 10vw;
+  }
+  .what_we_do_desc {
+    width: 90%;
+    text-align: left;
+    font-size: 1.4em;
+  }
+  .flow_desc_container {
+    width: 100%;
+    padding: 40px;
+  }
+  .flow_img_container {
+    height: 60vh;
+    width: 100%;
+    padding: 0;
+  }
+  .flow_img {
+    margin: auto;
+    width: 80vw;
+    height: 100%;
+  }
+  .flow_direction {
+    flex-direction: column-reverse;
+  }
+}
