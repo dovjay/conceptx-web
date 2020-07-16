@@ -8,7 +8,7 @@ export default function Layout({ contact, children }) {
   return (
     <div>
       <Navbar/>
-      <div style={{ margin: 'auto 6rem', marginTop: 120 }}>
+      <div className='layout-container'>
         {children}
         <SubFooter contact={contact} />
       </div>

@@ -17,6 +17,10 @@
   animation: animate 10s linear infinite;
 }
 
+.sub_footer {
+  margin-top: 400px;
+}
+
 @keyframes animate {
   0% {
     background-position-x: 0;
@@ -34,5 +38,14 @@
   100% {
     background-position-x: 1000px;
     background-position-y: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .footer {
+    margin-top: 0;
+  }
+  .sub_footer {
+    margin-top: 200px;
   }
 }
