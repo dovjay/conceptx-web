@@ -17,11 +17,11 @@ export default function subFooter(props) {
           <h4 className="font-weight-normal">Careers</h4>
           <p>Want to join conceptX? Happy to hear more about you at <a href="mailto:radi@conceptx.id">radi@conceptx.id</a>.</p>
         </div>
-        <div className="footer-card">
+        <div className="footer-card ml-auto">
           <h4 className="font-weight-normal">Blog</h4>
           <p>Read about design, technology, and culture on our insightful page.</p>
         </div>
-        <div className="footer-card">
+        <div className="footer-card ml-auto">
           <h4 className="font-weight-normal">Social</h4>
           <p>
             Let's connect. You can find us on <a href="https://instagram.com/conceptx.id">Instagram</a> and <a href="https://facebook.com/conceptx.id">Facebook</a>.

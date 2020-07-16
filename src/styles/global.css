@@ -39,6 +39,10 @@ a:hover {
   display: none;
 }
 
+.nav-mobile-activated {
+  display: none;
+}
+
 .sub-footer-header {
   font-size: 6.5vw;
 }
@@ -49,12 +53,11 @@ a:hover {
 
 .footer-card-container {
   display: flex;
-  margin-top: 200;
+  margin-top: 200px;
 }
 
 .footer-card {
-  width: 25vw;
-  margin-left: auto;
+  width: 24vw;
 }
 
 @media screen and (max-width: 480px) {
@@ -83,6 +86,15 @@ a:hover {
   }
   .nav-bar {
     padding: 30px 20px !important;
+  }
+  .nav-mobile-activated {
+    display: block;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: whitesmoke;
+    z-index: 10000;
   }
   .sub-footer-header {
     font-size: 7.5vw;

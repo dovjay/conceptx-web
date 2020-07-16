@@ -37,7 +37,7 @@ export default function Portfolio() {
     <>
       <div className="portfolio-desktop">
         <div style={{ marginTop: 450 }}>
-          <div className="d-flex">
+          <div style={{ width: "90%" }} className="d-flex justify-content-center mx-auto">
             <PortfolioSM 
               category="MICROSITE" 
               link="https://jelajahnussa.com" 
@@ -64,7 +64,7 @@ export default function Portfolio() {
         </div>
 
         <div style={{ marginTop: 200 }}>
-          <div className="d-flex">
+          <div style={{ width: "90%" }} className="d-flex justify-content-center mx-auto">
             <PortfolioSM 
               category="PRODUCT" 
               link="https://mofoto.id" 

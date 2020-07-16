@@ -11,7 +11,7 @@ export default function PortfolioMobile(props) {
       <div className="mt-2">
       <SubHeader content={props.category}/>
         <h3 className="font-weight-normal" style={{ fontSize: '1.2em' }}>
-          <a target="_blank" href={props.link}>{props.title}</a> - {props.description}
+          <a target="_blank" rel="noreferrer" href={props.link}>{props.title}</a> - {props.description}
         </h3>
       </div>
     </div>
