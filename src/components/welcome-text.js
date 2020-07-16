@@ -32,20 +32,20 @@ export default function WelcomeText() {
   }, [])
 
   return (
-    <div className="text-center" style={{ marginTop: 300 }}>
+    <div className="text-center welcome-text-container">
       <SubHeader content="HELLO THERE"/>
       <div className="d-flex w-100 justify-content-center align-items-center mt-5">
-        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
+        <h1 className="mt-5 position-absolute welcome-text-header">
           {[...textVariation[0]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-1" key={index}>{letter}</span>
           ))}
         </h1>
-        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
+        <h1 className="mt-5 position-absolute welcome-text-header">
           {[...textVariation[1]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-2" key={index}>{letter}</span>
           ))}
         </h1>
-        <h1 style={{ fontSize: '4vw', fontWeight: 400, width: '60%' }} className="mt-5 position-absolute">
+        <h1 className="mt-5 position-absolute welcome-text-header">
           {[...textVariation[2]].map((letter, index) => (
             <span style={{ opacity: 0 }} className="animated-text-3" key={index}>{letter}</span>
           ))}

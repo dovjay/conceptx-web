@@ -41,11 +41,15 @@ export default function Navbar() {
 
   return (
     <div className="p-5 fixed-top nav-bar">
-      <div className="d-flex px-5">
+      <div className="d-flex">
         <div className="h4">
           <Link style={{ textDecoration: 'none' }} to="/">ConceptX</Link>
         </div>
-        <div className="ml-auto">
+
+        <div className="ml-auto nav-menu-mobile">
+          Menu
+        </div>
+        <div className="ml-auto nav-menu-desktop">
           View <Link activeStyle={{ textDecoration: 'none' }} to="/">our work</Link>, 
           learn <Link activeStyle={{ textDecoration: 'none' }} partiallyActive={true} to="/about">about us</Link> or&nbsp;
           <Link activeStyle={{ textDecoration: 'none' }} partiallyActive={true} to="/contact">reach out</Link>.

@@ -1,7 +1,6 @@
 import React from "react"
 import Img from "gatsby-image"
-import { Link } from "gatsby"
-import styles from "../components/portfolio.module.css"
+import styles from "./portfolio.module.css"
 
 import SubHeader from "./sub-header"
 
@@ -12,7 +11,7 @@ export default function PortfolioLG(props) {
       <div className="mt-3">
         <SubHeader content={props.category}/>
         <h3 className="font-weight-normal" style={{ fontSize: '1.3vw' }}>
-          <Link to={props.link}>{props.title}</Link> - {props.description}
+          <a target="_blank" href={props.link}>{props.title}</a> - {props.description}
         </h3>
       </div>
     </div>
