@@ -6,7 +6,7 @@ import SubHeader from "./sub-header"
 
 export default function PortfolioMobile(props) {
   return (
-    <div style={{ marginTop: 100 }} className="mx-3">
+    <div style={{ marginTop: 100 }} className="mx-5">
       <Img fluid={props.img} sizes={{ ...props.img, aspectRatio: 1 / 1 }} className={styles.portfolio_img} />
       <div className="mt-2">
       <SubHeader content={props.category}/>
