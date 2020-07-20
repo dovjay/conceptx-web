@@ -17,7 +17,7 @@ module.exports = {
         short_name: `ConceptX`,
         description: `We make technologies more simpler.`,
         start_url: `/`,
-        icon: 'src/images/favicon.png'
+        icon: 'src/data/images/favicon.png'
       }
     },
     `gatsby-plugin-offline`,
