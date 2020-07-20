@@ -8,7 +8,7 @@ import PortfolioMobile from "./portfolio-mobile"
 export default function Portfolio() {
   const data = useStaticQuery(graphql`
     query {
-      squareImage: allFile(filter: { relativeDirectory: { eq: "images/portfolio/square" } }) {
+      squareImage: allFile(filter: { relativeDirectory: { eq: "images/portfolio/square" } }, sort: { fields: childImageSharp___fluid___originalName }) {
         edges {
           node {
             childImageSharp {
@@ -19,7 +19,7 @@ export default function Portfolio() {
           }
         }
       }
-      rectImage: allFile(filter: { relativeDirectory: { eq: "images/portfolio/rectangle" } }) {
+      rectImage: allFile(filter: { relativeDirectory: { eq: "images/portfolio/rectangle" } }, sort: { fields: childImageSharp___fluid___originalName }) {
         edges {
           node {
             childImageSharp {
@@ -56,9 +56,9 @@ export default function Portfolio() {
           </div>
           <PortfolioLG 
             category="COMPANY PROFILE" 
-            link="https://dytonadelikrisp.com" 
-            title="Dytona Deli Krisp"
-            description="Bring Indonesian native snack to international market."
+            link="https://langitpituofficial.com" 
+            title="Langit Pitu"
+            description="Present the best of cultural event concept."
             img={data.rectImage.edges[0].node.childImageSharp.fluid} 
           />
         </div>
@@ -83,9 +83,9 @@ export default function Portfolio() {
           </div>
           <PortfolioLG 
             category="COMPANY PROFILE" 
-            link="https://langitpituofficial.com" 
-            title="Langit Pitu"
-            description="Present the best of cultural event concept."
+            link="https://dytonadelikrisp.com" 
+            title="Dytona Deli Krisp"
+            description="Bring Indonesian native snack to international market."
             img={data.rectImage.edges[1].node.childImageSharp.fluid} 
           />
         </div>
@@ -112,7 +112,7 @@ export default function Portfolio() {
             link="https://dytonadelikrisp.com"
             title="Langit Pitu"
             description="Present the best of cultural event concept."
-            img={data.rectImage.edges[0].node.childImageSharp.fluid} 
+            img={data.squareImage.edges[4].node.childImageSharp.fluid} 
           />
           <PortfolioMobile
               category="PRODUCT" 
@@ -133,7 +133,7 @@ export default function Portfolio() {
             title="Dytona Deli Krisp"
             description="Bring Indonesian native snack to international market."
             link="https://langitpituofficial.com" 
-            img={data.rectImage.edges[1].node.childImageSharp.fluid} 
+            img={data.squareImage.edges[5].node.childImageSharp.fluid} 
           />
         </div>
       </div>
