@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import styles from "./footer.module.css"
 
 export default function subFooter(props) {
@@ -19,7 +20,7 @@ export default function subFooter(props) {
         </div>
         <div className="footer-card ml-auto">
           <h4 className="font-weight-normal">Blog</h4>
-          <p>Read about design, technology, and culture on our insightful page.</p>
+          <p>Read about design, technology, and culture on our insightful <Link to="/articles">articles</Link>.</p>
         </div>
         <div className="footer-card ml-auto">
           <h4 className="font-weight-normal">Social</h4>
