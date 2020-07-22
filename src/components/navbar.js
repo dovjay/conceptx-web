@@ -45,12 +45,12 @@ export default function Navbar() {
     if (mobileNav) {
       anime({
         targets: ".nav-mobile-activated",
-        translateX: "0"
+        translateX: "-100vw"
       })
     } else {
       anime({
         targets: ".nav-mobile-activated",
-        translateX: "100vw"
+        translateX: "0"
       })
     }
   }, [mobileNav])

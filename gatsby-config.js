@@ -20,10 +20,17 @@ module.exports = {
         icon: 'src/data/images/favicon.png'
       }
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-170209427-1",
+      }
+    },
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
+    `gatsby-plugin-react-helmet`,
   ],
 }
