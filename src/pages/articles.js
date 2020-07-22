@@ -6,18 +6,22 @@ export default function Articles({ data }) {
   console.log(data)
   return(
     <Layout>
-      <h1>Articles</h1>
-      <div className="mx-auto w-75 mt-5">
+      <div className="w-75 mx-auto">
+        <h1>Articles</h1>
+        <p>Our handful written article to give you insightful knowledge and learn more about what is trending in technology industry nowadays.</p>
+        <hr/>
         <h4>{data.allMarkdownRemark.totalCount} Posts</h4>
-        {data.allMarkdownRemark.edges.map(({ node }) => (
-          <div>
-            <div className="d-flex align-items-center">
-              <Link to={node.fields.slug}><h3>{node.frontmatter.title}</h3></Link>
-              <span className="ml-1 text-secondary font-weight-bold"> - {node.frontmatter.date}</span>
+        <div className="mt-5">
+          {data.allMarkdownRemark.edges.map(({ node }) => (
+            <div key={node.id}>
+              <div>
+                <Link to={`/${node.fields.slug}`}><span className="h3">{node.frontmatter.title}</span></Link>
+                <span className="ml-1 text-secondary font-weight-bold"> - {node.frontmatter.date}</span>
+              </div>
+              <p className="mt-2">{node.excerpt}</p>
             </div>
-            <p>{node.excerpt}</p>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </Layout>
   )
