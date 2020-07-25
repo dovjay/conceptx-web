@@ -1,8 +1,16 @@
+const netlifyCmsPaths = {
+  resolve: `gatsby-plugin-netlify-cms-paths`,
+  options: {
+    cmsConfig: `/static/admin/config.yml`,
+  }
+}
+
 module.exports = {
   siteMetadata: {
     title: `ConceptX`,
   },
   plugins: [
+    netlifyCmsPaths,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -26,11 +34,25 @@ module.exports = {
         trackingId: "UA-170209427-1",
       }
     },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          netlifyCmsPaths,
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              maxWdith: 930,
+              backgroundColor: 'transparent',
+            },
+          },
+        ]
+      }
+    },
     `gatsby-plugin-offline`,
     `gatsby-transformer-sharp`, 
     `gatsby-plugin-sharp`,
     `gatsby-plugin-netlify-cms`,
-    `gatsby-transformer-remark`,
     `gatsby-plugin-react-helmet`,
   ],
 }
